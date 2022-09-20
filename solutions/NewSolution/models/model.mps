@@ -5,7 +5,7 @@
     <use id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang" version="7" />
   </languages>
   <imports>
-    <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(base)" />
+    <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(cdm.base)" />
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -582,7 +582,7 @@
         <property role="TrG5h" value="=.price" />
         <ref role="1eNGTN" node="59xQMUDvcck" resolve="=.price" />
         <node concept="1eNGTy" id="5Om10i04a0S" role="1eNGTY">
-          <ref role="18$Dm6" to="58bx:4ESKiu59lhv" resolve="product" />
+          <ref role="18$Dm6" to="58bx:5TwpE0t8KG7" resolve="product" />
           <node concept="3fC3Ad" id="5Om10i04a0Q" role="3fC3Ac">
             <ref role="3fC3Aa" node="2AkSSRDm$E3" resolve="price" />
             <node concept="3fC3Ad" id="5Om10i04a0R" role="3fC3Ac">
@@ -591,22 +591,19 @@
           </node>
           <node concept="3$etan" id="5Om10i04oX8" role="ou1UI">
             <node concept="1eNGTy" id="5Om10i04wtZ" role="3$etag">
-              <ref role="18$Dm6" to="58bx:5TwpE0tb0gM" resolve="substractie" />
+              <ref role="18$Dm6" to="58bx:rktk3XecKY" resolve="substractie" />
               <node concept="3fC3Ad" id="5Om10i04wtY" role="3fC3Ac">
                 <ref role="3fC3Aa" node="2AkSSRDm$Dv" resolve="amount" />
               </node>
               <node concept="1eNGTy" id="5Om10i04JHw" role="ou1UI">
-                <ref role="18$Dm6" to="58bx:5TwpE0te65y" resolve="deel" />
+                <ref role="18$Dm6" to="58bx:4ESKiu59li1" resolve="deel" />
                 <node concept="3fC3Ad" id="7guiwPnJH17" role="3fC3Ac">
                   <ref role="3fC3Aa" node="2AkSSRDm$Dv" resolve="amount" />
                 </node>
-                <node concept="2FqeQL" id="7guiwPnKJr$" role="ou1UI">
-                  <ref role="2FqeQK" to="58bx:7vzFrYw9Ktx" resolve="decimaal" />
-                  <node concept="3fC3Ad" id="7guiwPnKJry" role="3fC3Ac">
-                    <ref role="3fC3Aa" node="2qGx8vAdP1D" resolve="quantum" />
-                    <node concept="3fC3Ad" id="7guiwPnKJrz" role="3fC3Ac">
-                      <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
-                    </node>
+                <node concept="3fC3Ad" id="7guiwPnKJry" role="ou1UI">
+                  <ref role="3fC3Aa" node="2qGx8vAdP1D" resolve="quantum" />
+                  <node concept="3fC3Ad" id="7guiwPnKJrz" role="3fC3Ac">
+                    <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
                   </node>
                 </node>
               </node>
