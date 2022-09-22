@@ -54,6 +54,8 @@
       <concept id="6527790569516534818" name="cdm.lang.structure.Scope" flags="ng" index="2EIHbd">
         <reference id="1579444964123989373" name="rootConcept" index="2928mI" />
         <child id="4856150046176901336" name="enumerations" index="2HeBD$" />
+        <child id="3032518906822545404" name="input" index="3tLugs" />
+        <child id="3032518906822545408" name="output" index="3tLvJw" />
       </concept>
       <concept id="8621213489606450764" name="cdm.lang.structure.FunctieAanroep" flags="ng" index="2FqeQL">
         <reference id="8621213489606450765" name="functie" index="2FqeQK" />
@@ -114,6 +116,13 @@
       </concept>
       <concept id="5384265730002319530" name="cdm.lang.structure.EigenschapAanroep" flags="ng" index="3fC3Ad">
         <reference id="5384265730002319533" name="eigenschap" index="3fC3Aa" />
+      </concept>
+      <concept id="3032518906822545770" name="cdm.lang.structure.EigenschapView" flags="ng" index="3tLvEa">
+        <reference id="3032518906822545805" name="eigenschap" index="3tLvDH" />
+        <child id="3032518906822545803" name="view" index="3tLvDF" />
+      </concept>
+      <concept id="3032518906822466437" name="cdm.lang.structure.ConceptView" flags="ng" index="3tQF1_">
+        <child id="3032518906822545771" name="eigenschapViews" index="3tLvEb" />
       </concept>
       <concept id="3087211677447604838" name="cdm.lang.structure.OorzaakGevolg" flags="ng" index="3up33f">
         <child id="6225478397814985011" name="oorzaken" index="WL0qH" />
@@ -656,6 +665,24 @@
       <ref role="2928mI" node="6IKLrTxohXL" resolve="Order" />
       <node concept="2HeBU9" id="5axjqhuz9wb" role="2HeBD$">
         <ref role="2HeBUa" node="2AkSSRDm$Ec" resolve="producs" />
+      </node>
+      <node concept="3tQF1_" id="2ClEY3RPr99" role="3tLugs">
+        <node concept="3tLvEa" id="2ClEY3RPr9b" role="3tLvEb">
+          <ref role="3tLvDH" node="6IKLrTxohYf" resolve="rows" />
+          <node concept="3tQF1_" id="2ClEY3RUu4Q" role="3tLvDF">
+            <node concept="3tLvEa" id="2ClEY3RVtZO" role="3tLvEb">
+              <ref role="3tLvDH" node="6IKLrTxohY8" resolve="product" />
+            </node>
+            <node concept="3tLvEa" id="2ClEY3RVtZE" role="3tLvEb">
+              <ref role="3tLvDH" node="2AkSSRDm$Dv" resolve="amount" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3tQF1_" id="2ClEY3RPr9d" role="3tLvJw">
+        <node concept="3tLvEa" id="2ClEY3RPr9f" role="3tLvEb">
+          <ref role="3tLvDH" node="2AkSSRDm$DR" resolve="total" />
+        </node>
       </node>
     </node>
   </node>
