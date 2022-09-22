@@ -661,7 +661,7 @@
     <property role="TrG5h" value="OrderService" />
     <property role="3GE5qa" value="services" />
     <node concept="2EIHbd" id="5axjqhuz9w9" role="2EIr5a">
-      <property role="TrG5h" value="OrderTotaal" />
+      <property role="TrG5h" value="OrderTotal" />
       <ref role="2928mI" node="6IKLrTxohXL" resolve="Order" />
       <node concept="2HeBU9" id="5axjqhuz9wb" role="2HeBD$">
         <ref role="2HeBUa" node="2AkSSRDm$Ec" resolve="producs" />
