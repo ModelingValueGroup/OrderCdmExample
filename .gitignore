@@ -1,2 +1,3 @@
 # Project exclude paths
-/solutions/NewSolution/classes_gen/
+*_gen
+*_gen.caches
