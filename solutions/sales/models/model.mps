@@ -110,6 +110,7 @@
         <reference id="3523973870520985059" name="kolom" index="1eNGTN" />
         <child id="3523973870520985070" name="expressie" index="1eNGTY" />
       </concept>
+      <concept id="5384265730003489071" name="cdm.lang.structure.SetLiteral" flags="ng" index="3f$x08" />
       <concept id="5384265730003489074" name="cdm.lang.structure.LijstLiteral" flags="ng" index="3f$x0l" />
       <concept id="5384265730003117190" name="cdm.lang.structure.TekstLiteral" flags="ng" index="3fBumx">
         <property id="5384265730003117191" name="waarde" index="3fBumw" />
@@ -119,7 +120,7 @@
       </concept>
       <concept id="3032518906822545770" name="cdm.lang.structure.EigenschapView" flags="ng" index="3tLvEa">
         <reference id="3032518906822545805" name="eigenschap" index="3tLvDH" />
-        <child id="3032518906822545803" name="view" index="3tLvDF" />
+        <child id="3032518906822545803" name="conceptView" index="3tLvDF" />
       </concept>
       <concept id="3032518906822466437" name="cdm.lang.structure.ConceptView" flags="ng" index="3tQF1_">
         <child id="3032518906822545771" name="eigenschapViews" index="3tLvEb" />
@@ -162,7 +163,7 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DR" role="1eKvlx">
       <property role="TrG5h" value="total" />
-      <node concept="2ZMt1D" id="59xQMUDx8ur" role="2YxCK$">
+      <node concept="2ZMt1D" id="6VFSZVa1ORN" role="2YxCK$">
         <property role="TrG5h" value="orderTotal" />
         <ref role="2ZMt1Q" node="59xQMUDw4Ss" resolve="orderTotal" />
       </node>
@@ -206,7 +207,7 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DE" role="1eKvlx">
       <property role="TrG5h" value="price" />
-      <node concept="2ZMt1D" id="59xQMUDvCYx" role="2YxCK$">
+      <node concept="2ZMt1D" id="6VFSZVa1ORM" role="2YxCK$">
         <property role="TrG5h" value="rowPrice" />
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
@@ -247,6 +248,15 @@
         <ref role="18$Bim" to="58bx:4ESKiu59MaM" resolve="GeheelGetal" />
       </node>
     </node>
+    <node concept="1eKvlY" id="5D2rbVJO$Zj" role="1eKvlx">
+      <property role="TrG5h" value="free" />
+      <node concept="18$Bil" id="5D2rbVJQZU3" role="3egi_F">
+        <ref role="18$Bim" to="58bx:4ESKiu4Wz0U" resolve="Set" />
+        <node concept="18$Bil" id="5D2rbVJR$po" role="18$Bid">
+          <ref role="18$Bim" node="6IKLrTxohXR" resolve="Product" />
+        </node>
+      </node>
+    </node>
     <node concept="18$Bil" id="6IKLrTxohXS" role="n_t83">
       <ref role="18$Bim" to="58bx:1EBvAHKt3VV" resolve="Object" />
     </node>
@@ -267,6 +277,9 @@
     <node concept="2Ezeut" id="2qGx8vAdwi7" role="2EzfOj">
       <ref role="2Ezeus" node="2qGx8vAdP1D" resolve="quantum" />
     </node>
+    <node concept="2Ezeut" id="5D2rbVJO_2y" role="2EzfOj">
+      <ref role="2Ezeus" node="5D2rbVJO$Zj" />
+    </node>
     <node concept="2EzfPp" id="2AkSSRDm$Ed" role="2EzfP9">
       <property role="TrG5h" value="kropsla" />
       <ref role="2EzfPj" node="6IKLrTxohXR" resolve="Product" />
@@ -281,7 +294,7 @@
         <property role="TrG5h" value="name" />
         <ref role="2EzfPh" node="6IKLrTxohXU" resolve="name" />
         <node concept="3fBumx" id="2AkSSRDm$Et" role="2Ezeth">
-          <property role="3fBumw" value="kropsla" />
+          <property role="3fBumw" value="ropsla" />
         </node>
       </node>
       <node concept="2EzfPm" id="2AkSSRDm$Er" role="2EzfPk">
@@ -297,6 +310,11 @@
         <node concept="2XkdlR" id="2qGx8vAhk9O" role="2Ezeth">
           <property role="2XkdlQ" value="0" />
         </node>
+      </node>
+      <node concept="2EzfPm" id="5D2rbVJO_2z" role="2EzfPk">
+        <property role="TrG5h" value="free" />
+        <ref role="2EzfPh" node="5D2rbVJO$Zj" />
+        <node concept="3f$x08" id="5D2rbVJQZUi" role="2Ezeth" />
       </node>
     </node>
     <node concept="2EzfPp" id="2AkSSRDm$EG" role="2EzfP9">
@@ -330,6 +348,11 @@
           <property role="2XkdlQ" value="2" />
         </node>
       </node>
+      <node concept="2EzfPm" id="5D2rbVJO_2$" role="2EzfPk">
+        <property role="TrG5h" value="free" />
+        <ref role="2EzfPh" node="5D2rbVJO$Zj" />
+        <node concept="3f$x08" id="5D2rbVJQZUh" role="2Ezeth" />
+      </node>
     </node>
     <node concept="2EzfPp" id="2AkSSRDm$Fd" role="2EzfP9">
       <property role="TrG5h" value="bloemkool" />
@@ -360,6 +383,15 @@
         <ref role="2EzfPh" node="2qGx8vAdP1D" resolve="quantum" />
         <node concept="2XkdlR" id="2qGx8vAhiCI" role="2Ezeth">
           <property role="2XkdlQ" value="3" />
+        </node>
+      </node>
+      <node concept="2EzfPm" id="5D2rbVJO_2_" role="2EzfPk">
+        <property role="TrG5h" value="free" />
+        <ref role="2EzfPh" node="5D2rbVJO$Zj" />
+        <node concept="3f$x08" id="5D2rbVJQZUg" role="2Ezeth">
+          <node concept="2bQEkN" id="5D2rbVJRG$c" role="3f$x0k">
+            <ref role="2bQEkM" node="2AkSSRDm$Ed" resolve="kropsla" />
+          </node>
         </node>
       </node>
     </node>
@@ -394,7 +426,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="5scVFFy095T" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
               </node>
             </node>
             <node concept="2EzfPm" id="5scVFFy095N" role="2EzfPk">
@@ -414,7 +446,7 @@
             <node concept="2EzfPm" id="5scVFFy095P" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="5Om10i08sn$" role="WL0qH">
+              <node concept="3uZZn6" id="6VFSZVa1ORP" role="WL0qH">
                 <ref role="3zXCHX" node="5scVFFy095K" resolve="1" />
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
               </node>
@@ -439,7 +471,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="3L9enGDG5ny" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
               </node>
             </node>
             <node concept="2EzfPm" id="3L9enGDG5nr" role="2EzfPk">
@@ -459,7 +491,7 @@
             <node concept="2EzfPm" id="3L9enGDG5nt" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="5Om10i05ZQc" role="WL0qH">
+              <node concept="3uZZn6" id="6VFSZVa1ORO" role="WL0qH">
                 <ref role="3zXCHX" node="3L9enGDG5no" resolve="2" />
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
               </node>
@@ -484,7 +516,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="2E6GvN9Fk9M" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
               </node>
             </node>
             <node concept="2EzfPm" id="2E6GvN9Fk9E" role="2EzfPk">
@@ -504,7 +536,7 @@
             <node concept="2EzfPm" id="2E6GvN9Fk9G" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="2qGx8vAjqhn" role="WL0qH">
+              <node concept="3uZZn6" id="6VFSZVa1ORQ" role="WL0qH">
                 <ref role="3zXCHX" node="2E6GvN9Fk9B" resolve="3" />
                 <ref role="3uZZnp" node="59xQMUDvccn" resolve="=.price" />
               </node>
@@ -519,8 +551,8 @@
     <node concept="2EzfPm" id="2AkSSRDq$KI" role="2EzfPk">
       <property role="TrG5h" value="total" />
       <ref role="2EzfPh" node="2AkSSRDm$DR" resolve="total" />
-      <node concept="3uZZn6" id="59xQMUDx8ut" role="WL0qH">
-        <ref role="3zXCHX" node="2AkSSRDq$tM" resolve="111" />
+      <node concept="3uZZn6" id="6VFSZVa1ORR" role="WL0qH">
+        <ref role="3zXCHX" node="2AkSSRDq$tM" resolve="Test 1" />
         <ref role="3uZZnp" node="59xQMUDw4Sx" resolve="=.total" />
       </node>
       <node concept="otZu$" id="35cxhKUf_7C" role="2Ezeth">
@@ -535,7 +567,7 @@
     <node concept="1eNGT8" id="59xQMUDvccl" role="1eNGTS">
       <node concept="1eNGTK" id="2qGx8vAhGvl" role="1eNGTL">
         <property role="TrG5h" value="?.product.quantum" />
-        <ref role="1eNGTN" node="2qGx8vAhGvk" resolve="?0" />
+        <ref role="1eNGTN" node="2qGx8vAhGvk" resolve="?.product.quantum" />
         <node concept="1eNGTy" id="2qGx8vAjkkJ" role="1eNGTY">
           <ref role="18$Dm6" to="58bx:4ESKiu59lgl" resolve="kleinerGelijk" />
           <node concept="2XkdlR" id="2qGx8vAjqhi" role="ou1UI">
@@ -545,7 +577,7 @@
       </node>
       <node concept="1eNGTK" id="59xQMUDvccn" role="1eNGTL">
         <property role="TrG5h" value="=.price" />
-        <ref role="1eNGTN" node="59xQMUDvcck" resolve="=1" />
+        <ref role="1eNGTN" node="59xQMUDvcck" resolve="=.price" />
         <node concept="1eNGTy" id="59xQMUDvQ68" role="1eNGTY">
           <ref role="18$Dm6" to="58bx:5TwpE0t8KG7" resolve="product" />
           <node concept="3fC3Ad" id="59xQMUDvQ66" role="3fC3Ac">
@@ -629,7 +661,7 @@
     <node concept="1eNGT8" id="59xQMUDw4Sv" role="1eNGTS">
       <node concept="1eNGTK" id="59xQMUDw4Sx" role="1eNGTL">
         <property role="TrG5h" value="=.total" />
-        <ref role="1eNGTN" node="59xQMUDw4Su" resolve="=1" />
+        <ref role="1eNGTN" node="59xQMUDw4Su" resolve="=.total" />
         <node concept="2FqeQL" id="59xQMUDxyRF" role="1eNGTY">
           <ref role="2FqeQK" to="58bx:2q5AM_xNtCu" resolve="fold" />
           <node concept="otZu$" id="59xQMUDybCJ" role="2FqeQN">
