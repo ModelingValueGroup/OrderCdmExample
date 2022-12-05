@@ -5,7 +5,7 @@
     <use id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang" version="7" />
   </languages>
   <imports>
-    <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(cdm.base)" />
+    <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(cdmbase)" />
     <import index="ugak" ref="r:2808fc49-83c8-46eb-a38d-2793dcf1c1cd(model)" />
   </imports>
   <registry>
@@ -170,7 +170,7 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DR" role="1eKvlx">
       <property role="TrG5h" value="total" />
-      <node concept="2ZMt1D" id="OIpsC9q8hI" role="2YxCK$">
+      <node concept="2ZMt1D" id="1GTRhbeq7Yk" role="2YxCK$">
         <property role="TrG5h" value="orderTotal" />
         <ref role="2ZMt1Q" node="59xQMUDw4Ss" resolve="orderTotal" />
       </node>
@@ -217,7 +217,7 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DE" role="1eKvlx">
       <property role="TrG5h" value="price" />
-      <node concept="2ZMt1D" id="OIpsC9q8hH" role="2YxCK$">
+      <node concept="2ZMt1D" id="1GTRhbeq7Yl" role="2YxCK$">
         <property role="TrG5h" value="rowPrice" />
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
@@ -459,9 +459,9 @@
             <node concept="2EzfPm" id="5scVFFy095P" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="OIpsC9q8hM" role="WL0qH">
-                <ref role="3zXCHX" node="5scVFFy095K" resolve="1" />
+              <node concept="3uZZn6" id="1GTRhbeq7Yo" role="WL0qH">
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
+                <ref role="3zXCHX" node="5scVFFy095K" resolve="1" />
               </node>
               <node concept="otZu$" id="3L9enGDG4FK" role="2Ezeth">
                 <property role="otZu_" value="1.9" />
@@ -504,9 +504,9 @@
             <node concept="2EzfPm" id="3L9enGDG5nt" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="OIpsC9q8hL" role="WL0qH">
-                <ref role="3zXCHX" node="3L9enGDG5no" resolve="2" />
+              <node concept="3uZZn6" id="1GTRhbeq7Yp" role="WL0qH">
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
+                <ref role="3zXCHX" node="3L9enGDG5no" resolve="2" />
               </node>
               <node concept="otZu$" id="35cxhKUf_7$" role="2Ezeth">
                 <property role="otZu_" value="5.0" />
@@ -549,9 +549,9 @@
             <node concept="2EzfPm" id="2E6GvN9Fk9G" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
-              <node concept="3uZZn6" id="OIpsC9q8hK" role="WL0qH">
-                <ref role="3zXCHX" node="2E6GvN9Fk9B" resolve="3" />
+              <node concept="3uZZn6" id="1GTRhbeq7Yn" role="WL0qH">
                 <ref role="3uZZnp" node="59xQMUDvccn" resolve="=.price" />
+                <ref role="3zXCHX" node="2E6GvN9Fk9B" resolve="3" />
               </node>
               <node concept="otZu$" id="35cxhKUf_7A" role="2Ezeth">
                 <property role="otZu_" value="12.0" />
@@ -564,9 +564,9 @@
     <node concept="2EzfPm" id="2AkSSRDq$KI" role="2EzfPk">
       <property role="TrG5h" value="total" />
       <ref role="2EzfPh" node="2AkSSRDm$DR" resolve="total" />
-      <node concept="3uZZn6" id="OIpsC9q8hJ" role="WL0qH">
-        <ref role="3zXCHX" node="2AkSSRDq$tM" resolve="Test 1" />
+      <node concept="3uZZn6" id="1GTRhbeq7Ym" role="WL0qH">
         <ref role="3uZZnp" node="59xQMUDw4Sx" resolve="=.total" />
+        <ref role="3zXCHX" node="2AkSSRDq$tM" resolve="Test 1" />
       </node>
       <node concept="otZu$" id="35cxhKUf_7C" role="2Ezeth">
         <property role="otZu_" value="18.9" />
