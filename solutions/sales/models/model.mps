@@ -19,6 +19,9 @@
     </language>
     <language id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang">
       <concept id="1331353977788050484" name="cdm.lang.structure.Service" flags="ng" index="269stn">
+        <property id="6156330026015473128" name="version" index="3lPD1y" />
+        <property id="10768897667298564" name="awsApplication" index="1wcFt5" />
+        <property id="10768897667298570" name="awsEnvironment" index="1wcFtb" />
         <child id="6527790569516625829" name="scopes" index="2EIr5a" />
       </concept>
       <concept id="2387291966582922513" name="cdm.lang.structure.ObjectIdLiteral" flags="ng" index="asc1O">
@@ -175,12 +178,12 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DR" role="1eKvlx">
       <property role="TrG5h" value="total" />
+      <node concept="18$Bil" id="2AkSSRDm$E0" role="3egi_F">
+        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
+      </node>
       <node concept="2ZMt1D" id="a90VdKz2py" role="2YxCK$">
         <property role="TrG5h" value="orderTotal" />
         <ref role="2ZMt1Q" node="59xQMUDw4Ss" resolve="orderTotal" />
-      </node>
-      <node concept="18$Bil" id="2AkSSRDm$E0" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
       </node>
     </node>
     <node concept="18$Bil" id="6IKLrTxohXM" role="n_t83">
@@ -222,12 +225,12 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DE" role="1eKvlx">
       <property role="TrG5h" value="price" />
+      <node concept="18$Bil" id="2AkSSRDm$DO" role="3egi_F">
+        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
+      </node>
       <node concept="2ZMt1D" id="a90VdKz2px" role="2YxCK$">
         <property role="TrG5h" value="rowPrice" />
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
-      </node>
-      <node concept="18$Bil" id="2AkSSRDm$DO" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
       </node>
     </node>
     <node concept="18$Bil" id="6IKLrTxohXP" role="n_t83">
@@ -464,12 +467,12 @@
             <node concept="2EzfPm" id="5scVFFy095P" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
+              <node concept="otZu$" id="3L9enGDG4FK" role="2Ezeth">
+                <property role="otZu_" value="1.9" />
+              </node>
               <node concept="3uZZn6" id="a90VdKz2pB" role="WL0qH">
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
                 <ref role="3zXCHX" node="5scVFFy095K" resolve="x1" />
-              </node>
-              <node concept="otZu$" id="3L9enGDG4FK" role="2Ezeth">
-                <property role="otZu_" value="1.9" />
               </node>
             </node>
           </node>
@@ -509,12 +512,12 @@
             <node concept="2EzfPm" id="3L9enGDG5nt" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
+              <node concept="otZu$" id="35cxhKUf_7$" role="2Ezeth">
+                <property role="otZu_" value="5.0" />
+              </node>
               <node concept="3uZZn6" id="a90VdKz2pA" role="WL0qH">
                 <ref role="3uZZnp" node="2qGx8vAjw0E" resolve="=.price" />
                 <ref role="3zXCHX" node="3L9enGDG5no" resolve="x2" />
-              </node>
-              <node concept="otZu$" id="35cxhKUf_7$" role="2Ezeth">
-                <property role="otZu_" value="5.0" />
               </node>
             </node>
           </node>
@@ -554,12 +557,12 @@
             <node concept="2EzfPm" id="2E6GvN9Fk9G" role="2EzfPk">
               <property role="TrG5h" value="price" />
               <ref role="2EzfPh" node="2AkSSRDm$DE" resolve="price" />
+              <node concept="otZu$" id="35cxhKUf_7A" role="2Ezeth">
+                <property role="otZu_" value="12.0" />
+              </node>
               <node concept="3uZZn6" id="a90VdKz2pC" role="WL0qH">
                 <ref role="3uZZnp" node="59xQMUDvccn" resolve="=.price" />
                 <ref role="3zXCHX" node="2E6GvN9Fk9B" resolve="x3" />
-              </node>
-              <node concept="otZu$" id="35cxhKUf_7A" role="2Ezeth">
-                <property role="otZu_" value="12.0" />
               </node>
             </node>
           </node>
@@ -569,12 +572,12 @@
     <node concept="2EzfPm" id="2AkSSRDq$KI" role="2EzfPk">
       <property role="TrG5h" value="total" />
       <ref role="2EzfPh" node="2AkSSRDm$DR" resolve="total" />
+      <node concept="otZu$" id="35cxhKUf_7C" role="2Ezeth">
+        <property role="otZu_" value="18.9" />
+      </node>
       <node concept="3uZZn6" id="a90VdKz2pz" role="WL0qH">
         <ref role="3uZZnp" node="59xQMUDw4Sx" resolve="=.total" />
         <ref role="3zXCHX" node="2AkSSRDq$tM" resolve="Test-1" />
-      </node>
-      <node concept="otZu$" id="35cxhKUf_7C" role="2Ezeth">
-        <property role="otZu_" value="18.9" />
       </node>
     </node>
   </node>
@@ -601,16 +604,16 @@
           <ref role="18$Dm6" to="58bx:5TwpE0t8KG7" resolve="product" />
           <node concept="3fC3Ad" id="59xQMUDvQ66" role="3fC3Ac">
             <ref role="3fC3Aa" node="2AkSSRDm$E3" resolve="price" />
-            <node concept="3uZZn6" id="1GTRhbhtJzB" role="WL0qH">
-              <ref role="3uZZnp" node="2AkSSRDm$Er" resolve="price" />
-              <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
-            </node>
             <node concept="3fC3Ad" id="59xQMUDvQ67" role="3fC3Ac">
               <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
               <node concept="3uZZn6" id="1GTRhbhtJzC" role="WL0qH">
                 <ref role="3uZZnp" node="1GTRhbhtH_W" resolve="product" />
                 <ref role="3zXCHX" node="1GTRhbhtH_R" resolve="2" />
               </node>
+            </node>
+            <node concept="3uZZn6" id="1GTRhbhtJzB" role="WL0qH">
+              <ref role="3uZZnp" node="2AkSSRDm$Er" resolve="price" />
+              <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
             </node>
           </node>
           <node concept="3fC3Ad" id="59xQMUDvVgz" role="ou1UI">
@@ -627,16 +630,16 @@
       <property role="TrG5h" value="?.product.quantum" />
       <node concept="3fC3Ad" id="2qGx8vAjeXC" role="3fw9hm">
         <ref role="3fC3Aa" node="2qGx8vAdP1D" resolve="quantum" />
-        <node concept="3uZZn6" id="1GTRhbhtJz$" role="WL0qH">
-          <ref role="3uZZnp" node="2qGx8vAdP23" resolve="quantum" />
-          <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
-        </node>
         <node concept="3fC3Ad" id="2qGx8vAjeXB" role="3fC3Ac">
           <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
           <node concept="3uZZn6" id="1GTRhbhtJz_" role="WL0qH">
             <ref role="3uZZnp" node="1GTRhbhtH_W" resolve="product" />
             <ref role="3zXCHX" node="1GTRhbhtH_R" resolve="2" />
           </node>
+        </node>
+        <node concept="3uZZn6" id="1GTRhbhtJz$" role="WL0qH">
+          <ref role="3uZZnp" node="2qGx8vAdP23" resolve="quantum" />
+          <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
         </node>
       </node>
     </node>
@@ -669,16 +672,16 @@
           <ref role="18$Dm6" to="58bx:5TwpE0t8KG7" resolve="product" />
           <node concept="3fC3Ad" id="5Om10i04a0Q" role="3fC3Ac">
             <ref role="3fC3Aa" node="2AkSSRDm$E3" resolve="price" />
-            <node concept="3uZZn6" id="1GTRhbhtJzu" role="WL0qH">
-              <ref role="3uZZnp" node="2AkSSRDm$Er" resolve="price" />
-              <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
-            </node>
             <node concept="3fC3Ad" id="5Om10i04a0R" role="3fC3Ac">
               <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
               <node concept="3uZZn6" id="1GTRhbhtJzv" role="WL0qH">
                 <ref role="3uZZnp" node="1GTRhbhtH_W" resolve="product" />
                 <ref role="3zXCHX" node="1GTRhbhtH_R" resolve="2" />
               </node>
+            </node>
+            <node concept="3uZZn6" id="1GTRhbhtJzu" role="WL0qH">
+              <ref role="3uZZnp" node="2AkSSRDm$Er" resolve="price" />
+              <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
             </node>
           </node>
           <node concept="3$etan" id="5Om10i04oX8" role="ou1UI">
@@ -702,16 +705,16 @@
                 </node>
                 <node concept="3fC3Ad" id="7guiwPnKJry" role="ou1UI">
                   <ref role="3fC3Aa" node="2qGx8vAdP1D" resolve="quantum" />
-                  <node concept="3uZZn6" id="1GTRhbhtJzy" role="WL0qH">
-                    <ref role="3uZZnp" node="2qGx8vAdP23" resolve="quantum" />
-                    <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
-                  </node>
                   <node concept="3fC3Ad" id="7guiwPnKJrz" role="3fC3Ac">
                     <ref role="3fC3Aa" node="6IKLrTxohY8" resolve="product" />
                     <node concept="3uZZn6" id="1GTRhbhtJzz" role="WL0qH">
                       <ref role="3uZZnp" node="1GTRhbhtH_W" resolve="product" />
                       <ref role="3zXCHX" node="1GTRhbhtH_R" resolve="2" />
                     </node>
+                  </node>
+                  <node concept="3uZZn6" id="1GTRhbhtJzy" role="WL0qH">
+                    <ref role="3uZZnp" node="2qGx8vAdP23" resolve="quantum" />
+                    <ref role="3zXCHX" node="2AkSSRDm$Ed" resolve="kropsla" />
                   </node>
                 </node>
               </node>
@@ -759,6 +762,9 @@
   <node concept="269stn" id="5axjqhuz9w8">
     <property role="TrG5h" value="OrderService" />
     <property role="3GE5qa" value="services" />
+    <property role="3lPD1y" value="0.1" />
+    <property role="1wcFt5" value="demo" />
+    <property role="1wcFtb" value="e-tvrmygb33u" />
     <node concept="2EIHbd" id="5axjqhuz9w9" role="2EIr5a">
       <property role="TrG5h" value="OrderTotal" />
       <ref role="2928mI" node="6IKLrTxohXL" resolve="Order" />
