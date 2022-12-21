@@ -2,7 +2,7 @@
 <model ref="r:10c2ddbd-bc79-4493-bef8-f7c1a0f6e2e1(model)">
   <persistence version="9" />
   <languages>
-    <use id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang" version="7" />
+    <use id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang" version="8" />
   </languages>
   <imports>
     <import index="58bx" ref="r:4a1209c4-c885-4c56-9c3d-054c2c3812b3(cdmbase)" />
@@ -18,42 +18,46 @@
       </concept>
     </language>
     <language id="2b379ad1-c243-479c-be1a-0c81bd5ce136" name="cdm.lang">
+      <concept id="2060799974998395855" name="cdm.lang.structure.ScopeReference" flags="ng" index="22salB">
+        <reference id="2060799974998395856" name="scope" index="22salS" />
+      </concept>
       <concept id="1331353977788050484" name="cdm.lang.structure.Service" flags="ng" index="269stn">
         <property id="6156330026015473128" name="version" index="3lPD1y" />
         <property id="10768897667298564" name="awsApplication" index="1wcFt5" />
         <property id="10768897667298570" name="awsEnvironment" index="1wcFtb" />
-        <child id="6527790569516625829" name="scopes" index="2EIr5a" />
+        <child id="2060799974998395861" name="scopes" index="22salX" />
       </concept>
       <concept id="2387291966582922513" name="cdm.lang.structure.ObjectIdLiteral" flags="ng" index="asc1O">
         <property id="2387291966582922514" name="id" index="asc1R" />
       </concept>
-      <concept id="21629023852851784" name="cdm.lang.structure.ObjectReferentie" flags="ng" index="2bQEkN">
+      <concept id="21629023852851784" name="cdm.lang.structure.ObjectReference" flags="ng" index="2bQEkN">
         <reference id="21629023852851785" name="object" index="2bQEkM" />
       </concept>
-      <concept id="1751529977330358424" name="cdm.lang.structure.DecimaalGetalLiteral" flags="ng" index="otZu$">
-        <property id="1751529977330358425" name="waarde" index="otZu_" />
+      <concept id="1751529977330358424" name="cdm.lang.structure.DecimalLiteral" flags="ng" index="otZu$">
+        <property id="1751529977330358425" name="value" index="otZu_" />
       </concept>
-      <concept id="3518351896542638189" name="cdm.lang.structure.BiFunctieLiteral" flags="ng" index="2sVk85">
-        <child id="3518351896542766437" name="expressie" index="2s$Psd" />
+      <concept id="3518351896542638189" name="cdm.lang.structure.BiFunctionLiteral" flags="ng" index="2sVk85">
+        <child id="3518351896542766437" name="expression" index="2s$Psd" />
       </concept>
-      <concept id="3936136853376497521" name="cdm.lang.structure.EigenschapCollectieAanroep" flags="ng" index="yiS3G">
-        <reference id="3936136853376648293" name="eigenschap" index="yijfS" />
+      <concept id="3936136853376497521" name="cdm.lang.structure.PropertyCollectionCall" flags="ng" index="yiS3G">
+        <reference id="3936136853376648293" name="attribute" index="yijfS" />
       </concept>
-      <concept id="8621213489612477536" name="cdm.lang.structure.EigenschapReferentie" flags="ng" index="2Ezeut">
-        <reference id="8621213489612477537" name="eigenschap" index="2Ezeus" />
+      <concept id="8621213489612477536" name="cdm.lang.structure.PropertyReference" flags="ng" index="2Ezeut">
+        <reference id="8621213489612477537" name="attribute" index="2Ezeus" />
       </concept>
-      <concept id="8621213489612476081" name="cdm.lang.structure.ObjectenTabel" flags="ng" index="2EzfPc">
+      <concept id="8621213489612476081" name="cdm.lang.structure.ObjectTable" flags="ng" index="2EzfPc">
         <reference id="8621213489612476086" name="concept" index="2EzfPb" />
-        <child id="8621213489612476142" name="eigenschappen" index="2EzfOj" />
-        <child id="8621213489612476084" name="objecten" index="2EzfP9" />
+        <child id="8621213489612476142" name="attributes" index="2EzfOj" />
+        <child id="8621213489612476084" name="objects" index="2EzfP9" />
       </concept>
-      <concept id="8621213489612476075" name="cdm.lang.structure.EigenschapWaarde" flags="ng" index="2EzfPm">
-        <reference id="8621213489612476076" name="eigenschap" index="2EzfPh" />
-        <child id="8621213489612477612" name="waarde" index="2Ezeth" />
+      <concept id="8621213489612476075" name="cdm.lang.structure.PropertyValue" flags="ng" index="2EzfPm">
+        <reference id="8621213489612476076" name="attribute" index="2EzfPh" />
+        <child id="8621213489612477612" name="value" index="2Ezeth" />
       </concept>
       <concept id="8621213489612476068" name="cdm.lang.structure.Object" flags="ng" index="2EzfPp">
         <reference id="8621213489612476078" name="concept" index="2EzfPj" />
-        <child id="8621213489612476073" name="eigenschapWaarden" index="2EzfPk" />
+        <reference id="10768897696104469" name="scope" index="1xUG9k" />
+        <child id="8621213489612476073" name="attributeValues" index="2EzfPk" />
       </concept>
       <concept id="6527790569516534818" name="cdm.lang.structure.Scope" flags="ng" index="2EIHbd">
         <reference id="1579444964123989373" name="rootConcept" index="2928mI" />
@@ -62,95 +66,95 @@
         <child id="3032518906822545404" name="input" index="3tLugs" />
         <child id="3032518906822545408" name="output" index="3tLvJw" />
       </concept>
-      <concept id="8621213489606450764" name="cdm.lang.structure.FunctieAanroep" flags="ng" index="2FqeQL">
-        <reference id="8621213489606450765" name="functie" index="2FqeQK" />
-        <child id="8621213489606450766" name="argumenten" index="2FqeQN" />
+      <concept id="8621213489606450764" name="cdm.lang.structure.FunctionCall" flags="ng" index="2FqeQL">
+        <reference id="8621213489606450765" name="function" index="2FqeQK" />
+        <child id="8621213489606450766" name="arguments" index="2FqeQN" />
       </concept>
-      <concept id="4856150046176902197" name="cdm.lang.structure.ObjectenTabelReference" flags="ng" index="2HeBU9">
-        <reference id="4856150046176902198" name="objectenTabel" index="2HeBUa" />
+      <concept id="4856150046176902197" name="cdm.lang.structure.ObjectTableReference" flags="ng" index="2HeBU9">
+        <reference id="4856150046176902198" name="objectsTable" index="2HeBUa" />
       </concept>
-      <concept id="4917050092754307702" name="cdm.lang.structure.GeheelGetalLiteral" flags="ng" index="2XkdlR">
-        <property id="4917050092754307703" name="waarde" index="2XkdlQ" />
+      <concept id="4917050092754307702" name="cdm.lang.structure.IntegerLiteral" flags="ng" index="2XkdlR">
+        <property id="4917050092754307703" name="value" index="2XkdlQ" />
       </concept>
-      <concept id="4295925548373762543" name="cdm.lang.structure.CalculatieTabelRef" flags="ng" index="2ZMt1D">
-        <reference id="4295925548373762544" name="tabel" index="2ZMt1Q" />
+      <concept id="4295925548373762543" name="cdm.lang.structure.CalculationTableRef" flags="ng" index="2ZMt1D">
+        <reference id="4295925548373762544" name="table" index="2ZMt1Q" />
       </concept>
-      <concept id="2267501262121783678" name="cdm.lang.structure.CollectieLiteral" flags="ng" index="17WL$s">
-        <child id="5384265730003489075" name="elementen" index="3f$x0k" />
+      <concept id="2267501262121783678" name="cdm.lang.structure.CollectionLiteral" flags="ng" index="17WL$s">
+        <child id="5384265730003489075" name="elements" index="3f$x0k" />
       </concept>
-      <concept id="5593859672339846441" name="cdm.lang.structure.KlasseReferentie" flags="ng" index="18$Bil">
-        <reference id="5593859672339846442" name="klasse" index="18$Bim" />
-        <child id="5593859672339846449" name="argumenten" index="18$Bid" />
+      <concept id="5593859672339846441" name="cdm.lang.structure.CDMClassReference" flags="ng" index="18$Bil">
+        <reference id="5593859672339846442" name="cdmClass" index="18$Bim" />
+        <child id="5593859672339846449" name="arguments" index="18$Bid" />
       </concept>
       <concept id="1961842185573198296" name="cdm.lang.structure.ExampleReference" flags="ng" index="3bjFja">
         <reference id="1961842185573198306" name="example" index="3bjFjK" />
       </concept>
-      <concept id="3523973870520825495" name="cdm.lang.structure.Klasse" flags="ng" index="1eKlO7">
+      <concept id="3523973870520825495" name="cdm.lang.structure.CDMClass" flags="ng" index="1eKlO7">
         <reference id="6174104483786441353" name="mClassField" index="2B$x7p" />
         <reference id="6174104483786426148" name="javaClass" index="2B$_hO" />
         <reference id="6174104483786414316" name="makeMethod" index="2B$CIW" />
-        <child id="3914463568149816803" name="generalisaties" index="n_t83" />
+        <child id="3914463568149816803" name="supers" index="n_t83" />
       </concept>
-      <concept id="3523973870520786670" name="cdm.lang.structure.Eigenschap" flags="ng" index="1eKvlY">
-        <property id="3523973870520860576" name="compositie" index="1eKdgK" />
+      <concept id="3523973870520786670" name="cdm.lang.structure.Property" flags="ng" index="1eKvlY">
+        <property id="3523973870520860576" name="composite" index="1eKdgK" />
         <reference id="3523973870520860573" name="inverse" index="1eKdgd" />
-        <child id="4295925548386401698" name="doelTabellen" index="2YxCK$" />
-        <child id="4295925548386401707" name="bronTabellen" index="2YxCKH" />
+        <child id="4295925548386401698" name="targetTables" index="2YxCK$" />
+        <child id="4295925548386401707" name="sourceTables" index="2YxCKH" />
         <child id="5384265730000283724" name="type" index="3egi_F" />
       </concept>
       <concept id="3523973870520742991" name="cdm.lang.structure.Concept" flags="ng" index="1eKxZv">
-        <child id="3523973870520786673" name="eigenschappen" index="1eKvlx" />
+        <child id="3523973870520786673" name="attributes" index="1eKvlx" />
       </concept>
-      <concept id="3523973870520985045" name="cdm.lang.structure.CalculatieTabel" flags="ng" index="1eNGT5">
+      <concept id="3523973870520985045" name="cdm.lang.structure.CalculationTable" flags="ng" index="1eNGT5">
         <reference id="6814292496899984083" name="focusObject" index="17L70Z" />
         <reference id="5384265730004379782" name="concept" index="3fwaAx" />
-        <child id="3523973870520985061" name="kolommen" index="1eNGTP" />
-        <child id="3523973870520985064" name="regels" index="1eNGTS" />
+        <child id="3523973870520985061" name="columns" index="1eNGTP" />
+        <child id="3523973870520985064" name="rows" index="1eNGTS" />
       </concept>
-      <concept id="3523973870520985048" name="cdm.lang.structure.CalculatieRegel" flags="ng" index="1eNGT8">
-        <child id="3523973870520985057" name="cellen" index="1eNGTL" />
+      <concept id="3523973870520985048" name="cdm.lang.structure.CalculationRow" flags="ng" index="1eNGT8">
+        <child id="3523973870520985057" name="cells" index="1eNGTL" />
       </concept>
-      <concept id="3523973870520985053" name="cdm.lang.structure.CalculatieKolom" flags="ng" index="1eNGTd">
-        <property id="3523973870520985068" name="doel" index="1eNGTW" />
-        <child id="5384265730004374897" name="expressie" index="3fw9hm" />
+      <concept id="3523973870520985053" name="cdm.lang.structure.CalculationColumn" flags="ng" index="1eNGTd">
+        <property id="3523973870520985068" name="target" index="1eNGTW" />
+        <child id="5384265730004374897" name="expression" index="3fw9hm" />
       </concept>
-      <concept id="3523973870520985074" name="cdm.lang.structure.BinaireOperatieAanroep" flags="ng" index="1eNGTy">
-        <reference id="5593859672339903546" name="operatie" index="18$Dm6" />
-        <child id="1751529977330184594" name="rechts" index="ou1UI" />
+      <concept id="3523973870520985074" name="cdm.lang.structure.BinaryOperationCall" flags="ng" index="1eNGTy">
+        <reference id="5593859672339903546" name="operation" index="18$Dm6" />
+        <child id="1751529977330184594" name="right" index="ou1UI" />
       </concept>
-      <concept id="3523973870520985056" name="cdm.lang.structure.CalculatieCel" flags="ng" index="1eNGTK">
-        <reference id="3523973870520985059" name="kolom" index="1eNGTN" />
-        <child id="3523973870520985070" name="expressie" index="1eNGTY" />
+      <concept id="3523973870520985056" name="cdm.lang.structure.CalculationCell" flags="ng" index="1eNGTK">
+        <reference id="3523973870520985059" name="column" index="1eNGTN" />
+        <child id="3523973870520985070" name="expression" index="1eNGTY" />
       </concept>
       <concept id="5384265730003489071" name="cdm.lang.structure.SetLiteral" flags="ng" index="3f$x08" />
-      <concept id="5384265730003489074" name="cdm.lang.structure.LijstLiteral" flags="ng" index="3f$x0l" />
-      <concept id="5384265730003117190" name="cdm.lang.structure.TekstLiteral" flags="ng" index="3fBumx">
-        <property id="5384265730003117191" name="waarde" index="3fBumw" />
+      <concept id="5384265730003489074" name="cdm.lang.structure.ListLiteral" flags="ng" index="3f$x0l" />
+      <concept id="5384265730003117190" name="cdm.lang.structure.StringLiteral" flags="ng" index="3fBumx">
+        <property id="5384265730003117191" name="value" index="3fBumw" />
       </concept>
-      <concept id="5384265730002319530" name="cdm.lang.structure.EigenschapAanroep" flags="ng" index="3fC3Ad">
-        <reference id="5384265730002319533" name="eigenschap" index="3fC3Aa" />
+      <concept id="5384265730002319530" name="cdm.lang.structure.PropertyCall" flags="ng" index="3fC3Ad">
+        <reference id="5384265730002319533" name="attribute" index="3fC3Aa" />
       </concept>
-      <concept id="3032518906822545770" name="cdm.lang.structure.EigenschapView" flags="ng" index="3tLvEa">
-        <reference id="3032518906822545805" name="eigenschap" index="3tLvDH" />
+      <concept id="3032518906822545770" name="cdm.lang.structure.PropertyView" flags="ng" index="3tLvEa">
+        <reference id="3032518906822545805" name="attribute" index="3tLvDH" />
         <child id="3032518906822545803" name="conceptView" index="3tLvDF" />
       </concept>
       <concept id="3032518906822466437" name="cdm.lang.structure.ConceptView" flags="ng" index="3tQF1_">
-        <child id="3032518906822545771" name="eigenschapViews" index="3tLvEb" />
+        <child id="3032518906822545771" name="attributeViews" index="3tLvEb" />
       </concept>
-      <concept id="3087211677447604838" name="cdm.lang.structure.OorzaakGevolg" flags="ng" index="3up33f">
-        <child id="6225478397814985011" name="oorzaken" index="WL0qH" />
+      <concept id="3087211677447604838" name="cdm.lang.structure.ReasonConsequence" flags="ng" index="3up33f">
+        <child id="6225478397814985011" name="causes" index="WL0qH" />
       </concept>
-      <concept id="3087211677438447471" name="cdm.lang.structure.OorzaakRef" flags="ng" index="3uZZn6">
-        <reference id="3087211677438447472" name="oorzaak" index="3uZZnp" />
+      <concept id="3087211677438447471" name="cdm.lang.structure.ReasonRef" flags="ng" index="3uZZn6">
+        <reference id="3087211677438447472" name="cause" index="3uZZnp" />
         <reference id="7252060905860691333" name="object" index="3zXCHX" />
       </concept>
       <concept id="5622673552036726658" name="cdm.lang.structure.ContainedObject" flags="ng" index="1z9rxc">
         <child id="5622673552036726659" name="object" index="1z9rxd" />
       </concept>
-      <concept id="2617022412468279955" name="cdm.lang.structure.HaakjesExpressie" flags="ng" index="3$etan">
-        <child id="2617022412468279956" name="expressie" index="3$etag" />
+      <concept id="2617022412468279955" name="cdm.lang.structure.ParenthesesExpression" flags="ng" index="3$etan">
+        <child id="2617022412468279956" name="expression" index="3$etag" />
       </concept>
-      <concept id="4457850311331277277" name="cdm.lang.structure.Aanroep" flags="ng" index="1L7DVw">
+      <concept id="4457850311331277277" name="cdm.lang.structure.Call" flags="ng" index="1L7DVw">
         <child id="5384265730002319531" name="base" index="3fC3Ac" />
       </concept>
     </language>
@@ -158,9 +162,9 @@
   <node concept="1eKxZv" id="6IKLrTxohXL">
     <property role="TrG5h" value="Order" />
     <property role="3GE5qa" value="concepten" />
-    <ref role="2B$CIW" to="ugak:5HrDjOTKa9R" />
+    <ref role="2B$CIW" to="ugak:5HrDjOTKa9R" resolve="make" />
     <ref role="2B$_hO" to="ugak:5HrDjOTKa99" resolve="C__Order" />
-    <ref role="2B$x7p" to="ugak:5HrDjOTKa9O" />
+    <ref role="2B$x7p" to="ugak:5HrDjOTKa9O" resolve="M_CLASS" />
     <node concept="1eKvlY" id="6IKLrTxohYf" role="1eKvlx">
       <property role="TrG5h" value="rows" />
       <property role="1eKdgK" value="true" />
@@ -170,7 +174,7 @@
         <ref role="2ZMt1Q" node="59xQMUDw4Ss" resolve="orderTotal" />
       </node>
       <node concept="18$Bil" id="6IKLrTxohYl" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4ESKiu55O2w" resolve="Lijst" />
+        <ref role="18$Bim" to="58bx:4ESKiu55O2w" resolve="List" />
         <node concept="18$Bil" id="6IKLrTxohYo" role="18$Bid">
           <ref role="18$Bim" node="6IKLrTxohXO" resolve="OrderRow" />
         </node>
@@ -178,12 +182,12 @@
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DR" role="1eKvlx">
       <property role="TrG5h" value="total" />
-      <node concept="2ZMt1D" id="2K7X33t43Tn" role="2YxCK$">
+      <node concept="2ZMt1D" id="1MprEyv183O" role="2YxCK$">
         <property role="TrG5h" value="orderTotal" />
         <ref role="2ZMt1Q" node="59xQMUDw4Ss" resolve="orderTotal" />
       </node>
       <node concept="18$Bil" id="2AkSSRDm$E0" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
+        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="Decimal" />
       </node>
     </node>
     <node concept="18$Bil" id="6IKLrTxohXM" role="n_t83">
@@ -193,9 +197,9 @@
   <node concept="1eKxZv" id="6IKLrTxohXO">
     <property role="TrG5h" value="OrderRow" />
     <property role="3GE5qa" value="concepten" />
-    <ref role="2B$CIW" to="ugak:5HrDjOTKaaj" />
+    <ref role="2B$CIW" to="ugak:5HrDjOTKaaj" resolve="make" />
     <ref role="2B$_hO" to="ugak:5HrDjOTKa98" resolve="C__OrderRow" />
-    <ref role="2B$x7p" to="ugak:5HrDjOTKaae" />
+    <ref role="2B$x7p" to="ugak:5HrDjOTKaae" resolve="M_CLASS" />
     <node concept="1eKvlY" id="6IKLrTxohYq" role="1eKvlx">
       <property role="TrG5h" value="order" />
       <ref role="1eKdgd" node="6IKLrTxohYf" resolve="rows" />
@@ -220,17 +224,17 @@
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
       <node concept="18$Bil" id="2AkSSRDm$DB" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4ESKiu59MaM" resolve="GeheelGetal" />
+        <ref role="18$Bim" to="58bx:4ESKiu59MaM" resolve="Integer" />
       </node>
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$DE" role="1eKvlx">
       <property role="TrG5h" value="price" />
-      <node concept="2ZMt1D" id="2K7X33t43To" role="2YxCK$">
+      <node concept="2ZMt1D" id="1MprEyv183P" role="2YxCK$">
         <property role="TrG5h" value="rowPrice" />
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
       <node concept="18$Bil" id="2AkSSRDm$DO" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
+        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="Decimal" />
       </node>
     </node>
     <node concept="18$Bil" id="6IKLrTxohXP" role="n_t83">
@@ -246,7 +250,7 @@
     <node concept="1eKvlY" id="6IKLrTxohXU" role="1eKvlx">
       <property role="TrG5h" value="name" />
       <node concept="18$Bil" id="6IKLrTxohXY" role="3egi_F">
-        <ref role="18$Bim" to="58bx:33BET1Y9RYo" resolve="Tekst" />
+        <ref role="18$Bim" to="58bx:33BET1Y9RYo" resolve="String" />
       </node>
     </node>
     <node concept="1eKvlY" id="2AkSSRDm$E3" role="1eKvlx">
@@ -256,7 +260,7 @@
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
       <node concept="18$Bil" id="2AkSSRDm$E9" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="DecimaalGetal" />
+        <ref role="18$Bim" to="58bx:4gWRK7TqZ06" resolve="Decimal" />
       </node>
     </node>
     <node concept="1eKvlY" id="2qGx8vAdP1D" role="1eKvlx">
@@ -266,7 +270,7 @@
         <ref role="2ZMt1Q" node="59xQMUDvcci" resolve="rowPrice" />
       </node>
       <node concept="18$Bil" id="2qGx8vAdP1M" role="3egi_F">
-        <ref role="18$Bim" to="58bx:4ESKiu59MaM" resolve="GeheelGetal" />
+        <ref role="18$Bim" to="58bx:4ESKiu59MaM" resolve="Integer" />
       </node>
     </node>
     <node concept="1eKvlY" id="5D2rbVJO$Zj" role="1eKvlx">
@@ -447,7 +451,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="5scVFFy095T" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test-1" />
               </node>
             </node>
             <node concept="2EzfPm" id="5scVFFy095N" role="2EzfPk">
@@ -492,7 +496,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="3L9enGDG5ny" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test-1" />
               </node>
             </node>
             <node concept="2EzfPm" id="3L9enGDG5nr" role="2EzfPk">
@@ -537,7 +541,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="2E6GvN9Fk9M" role="2Ezeth">
-                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test 1" />
+                <ref role="2bQEkM" node="2AkSSRDq$tM" resolve="Test-1" />
               </node>
             </node>
             <node concept="2EzfPm" id="2E6GvN9Fk9E" role="2EzfPk">
@@ -591,7 +595,7 @@
         <property role="TrG5h" value="?.product.quantum" />
         <ref role="1eNGTN" node="2qGx8vAhGvk" resolve="?.product.quantum" />
         <node concept="1eNGTy" id="2qGx8vAjkkJ" role="1eNGTY">
-          <ref role="18$Dm6" to="58bx:4ESKiu59lgl" resolve="kleinerGelijk" />
+          <ref role="18$Dm6" to="58bx:4ESKiu59lgl" resolve="lessThanOrEqual" />
           <node concept="2XkdlR" id="2qGx8vAjqhi" role="ou1UI">
             <property role="2XkdlQ" value="0" />
           </node>
@@ -659,7 +663,7 @@
         <property role="TrG5h" value="?.product.quantum" />
         <ref role="1eNGTN" node="2qGx8vAhGvk" resolve="?.product.quantum" />
         <node concept="1eNGTy" id="2qGx8vAjBvp" role="1eNGTY">
-          <ref role="18$Dm6" to="58bx:4ESKiu59lfh" resolve="groter" />
+          <ref role="18$Dm6" to="58bx:4ESKiu59lfh" resolve="greaterThan" />
           <node concept="2XkdlR" id="2qGx8vAjHLK" role="ou1UI">
             <property role="2XkdlQ" value="0" />
           </node>
@@ -686,7 +690,7 @@
           </node>
           <node concept="3$etan" id="5Om10i04oX8" role="ou1UI">
             <node concept="1eNGTy" id="5Om10i04wtZ" role="3$etag">
-              <ref role="18$Dm6" to="58bx:rktk3XecKY" resolve="substractie" />
+              <ref role="18$Dm6" to="58bx:rktk3XecKY" resolve="minus" />
               <node concept="3fC3Ad" id="5Om10i04wtY" role="3fC3Ac">
                 <ref role="3fC3Aa" node="2AkSSRDm$Dv" resolve="amount" />
                 <node concept="3uZZn6" id="1GTRhbhtJzw" role="WL0qH">
@@ -695,7 +699,7 @@
                 </node>
               </node>
               <node concept="1eNGTy" id="5Om10i04JHw" role="ou1UI">
-                <ref role="18$Dm6" to="58bx:4ESKiu59li1" resolve="deel" />
+                <ref role="18$Dm6" to="58bx:4ESKiu59li1" resolve="divide" />
                 <node concept="3fC3Ad" id="7guiwPnJH17" role="3fC3Ac">
                   <ref role="3fC3Aa" node="2AkSSRDm$Dv" resolve="amount" />
                   <node concept="3uZZn6" id="1GTRhbhtJzx" role="WL0qH">
@@ -739,7 +743,7 @@
           </node>
           <node concept="2sVk85" id="59xQMUDxySf" role="2FqeQN">
             <node concept="1eNGTy" id="59xQMUDyhQY" role="2s$Psd">
-              <ref role="18$Dm6" to="58bx:4ESKiu59lgJ" resolve="som" />
+              <ref role="18$Dm6" to="58bx:4ESKiu59lgJ" resolve="plus" />
             </node>
           </node>
           <node concept="yiS3G" id="59xQMUDxyRD" role="3fC3Ac">
@@ -765,36 +769,8 @@
     <property role="3lPD1y" value="0.6.6" />
     <property role="1wcFt5" value="demo" />
     <property role="1wcFtb" value="e-tvrmygb33u" />
-    <node concept="2EIHbd" id="5axjqhuz9w9" role="2EIr5a">
-      <property role="TrG5h" value="OrderTotal" />
-      <ref role="2928mI" node="6IKLrTxohXL" resolve="Order" />
-      <node concept="2HeBU9" id="5axjqhuz9wb" role="2HeBD$">
-        <ref role="2HeBUa" node="2AkSSRDm$Ec" resolve="producs" />
-      </node>
-      <node concept="3tQF1_" id="2ClEY3RPr99" role="3tLugs">
-        <node concept="3tLvEa" id="2ClEY3RPr9b" role="3tLvEb">
-          <ref role="3tLvDH" node="6IKLrTxohYf" resolve="rows" />
-          <node concept="3tQF1_" id="2ClEY3RUu4Q" role="3tLvDF">
-            <node concept="3tLvEa" id="2ClEY3RVtZO" role="3tLvEb">
-              <ref role="3tLvDH" node="6IKLrTxohY8" resolve="product" />
-            </node>
-            <node concept="3tLvEa" id="2ClEY3RVtZE" role="3tLvEb">
-              <ref role="3tLvDH" node="2AkSSRDm$Dv" resolve="amount" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3tQF1_" id="2ClEY3RPr9d" role="3tLvJw">
-        <node concept="3tLvEa" id="2ClEY3RPr9f" role="3tLvEb">
-          <ref role="3tLvDH" node="2AkSSRDm$DR" resolve="total" />
-        </node>
-      </node>
-      <node concept="3bjFja" id="1GTRhbhtqkW" role="3ljKQ0">
-        <ref role="3bjFjK" node="2AkSSRDq$tM" resolve="Test 1" />
-      </node>
-      <node concept="3bjFja" id="1GTRhbhtLBx" role="3ljKQ0">
-        <ref role="3bjFjK" node="1GTRhbhtH_$" resolve="Test-2" />
-      </node>
+    <node concept="22salB" id="1MprEywHaaI" role="22salX">
+      <ref role="22salS" node="5axjqhuz9w9" resolve="OrderTotal" />
     </node>
   </node>
   <node concept="2EzfPp" id="1GTRhbhtH_$">
@@ -827,7 +803,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="1GTRhbhtH_I" role="2Ezeth">
-                <ref role="2bQEkM" node="1GTRhbhtH_$" resolve="Test 1" />
+                <ref role="2bQEkM" node="1GTRhbhtH_$" resolve="Test-2" />
               </node>
             </node>
             <node concept="2EzfPm" id="1GTRhbhtH_J" role="2EzfPk">
@@ -872,7 +848,7 @@
               <property role="TrG5h" value="order" />
               <ref role="2EzfPh" node="6IKLrTxohYq" resolve="order" />
               <node concept="2bQEkN" id="1GTRhbhtH_V" role="2Ezeth">
-                <ref role="2bQEkM" node="1GTRhbhtH_$" resolve="Test 1" />
+                <ref role="2bQEkM" node="1GTRhbhtH_$" resolve="Test-2" />
               </node>
             </node>
             <node concept="2EzfPm" id="1GTRhbhtH_W" role="2EzfPk">
@@ -914,6 +890,149 @@
       <node concept="otZu$" id="1GTRhbhtHAi" role="2Ezeth">
         <property role="otZu_" value="6.8" />
       </node>
+    </node>
+  </node>
+  <node concept="2EzfPp" id="1MprEyuUqDU">
+    <property role="TrG5h" value="Test-1-scope" />
+    <property role="3GE5qa" value="testen" />
+    <ref role="2EzfPj" node="6IKLrTxohXL" resolve="Order" />
+    <ref role="1xUG9k" node="5axjqhuz9w9" resolve="OrderTotal" />
+    <node concept="2EzfPm" id="1MprEyuUqDV" role="2EzfPk">
+      <property role="TrG5h" value="id" />
+      <ref role="2EzfPh" to="58bx:39mK9B0Vi1$" resolve="id" />
+      <node concept="asc1O" id="1MprEyuUqDW" role="2Ezeth">
+        <property role="asc1R" value="Test-1-scope" />
+      </node>
+    </node>
+    <node concept="2EzfPm" id="1MprEyuUqDX" role="2EzfPk">
+      <property role="TrG5h" value="rows" />
+      <ref role="2EzfPh" node="6IKLrTxohYf" resolve="rows" />
+      <node concept="3f$x0l" id="1MprEyuUqDY" role="2Ezeth">
+        <node concept="1z9rxc" id="1MprEyuUqDZ" role="3f$x0k">
+          <node concept="2EzfPp" id="1MprEyuUqE0" role="1z9rxd">
+            <property role="TrG5h" value="x1-scope" />
+            <ref role="2EzfPj" node="6IKLrTxohXO" resolve="OrderRow" />
+            <node concept="2EzfPm" id="1MprEyuUqE1" role="2EzfPk">
+              <property role="TrG5h" value="id" />
+              <ref role="2EzfPh" to="58bx:39mK9B0Vi1$" resolve="id" />
+              <node concept="asc1O" id="1MprEyuUqE2" role="2Ezeth">
+                <property role="asc1R" value="x1-scope" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqE5" role="2EzfPk">
+              <property role="TrG5h" value="product" />
+              <ref role="2EzfPh" node="6IKLrTxohY8" resolve="product" />
+              <node concept="2bQEkN" id="1MprEyuUqE6" role="2Ezeth">
+                <ref role="2bQEkM" node="2AkSSRDm$Fd" resolve="bloemkool" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqE7" role="2EzfPk">
+              <property role="TrG5h" value="amount" />
+              <ref role="2EzfPh" node="2AkSSRDm$Dv" resolve="amount" />
+              <node concept="2XkdlR" id="1MprEyuUqE8" role="2Ezeth">
+                <property role="2XkdlQ" value="1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1z9rxc" id="1MprEyuUqEc" role="3f$x0k">
+          <node concept="2EzfPp" id="1MprEyuUqEd" role="1z9rxd">
+            <property role="TrG5h" value="x2-scope" />
+            <ref role="2EzfPj" node="6IKLrTxohXO" resolve="OrderRow" />
+            <node concept="2EzfPm" id="1MprEyuUqEe" role="2EzfPk">
+              <property role="TrG5h" value="id" />
+              <ref role="2EzfPh" to="58bx:39mK9B0Vi1$" resolve="id" />
+              <node concept="asc1O" id="1MprEyuUqEf" role="2Ezeth">
+                <property role="asc1R" value="x2-scope" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqEi" role="2EzfPk">
+              <property role="TrG5h" value="product" />
+              <ref role="2EzfPh" node="6IKLrTxohY8" resolve="product" />
+              <node concept="2bQEkN" id="1MprEyuUqEj" role="2Ezeth">
+                <ref role="2bQEkM" node="2AkSSRDm$EG" resolve="komkommer" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqEk" role="2EzfPk">
+              <property role="TrG5h" value="amount" />
+              <ref role="2EzfPh" node="2AkSSRDm$Dv" resolve="amount" />
+              <node concept="2XkdlR" id="1MprEyuUqEl" role="2Ezeth">
+                <property role="2XkdlQ" value="3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1z9rxc" id="1MprEyuUqEp" role="3f$x0k">
+          <node concept="2EzfPp" id="1MprEyuUqEq" role="1z9rxd">
+            <property role="TrG5h" value="x3-scope" />
+            <ref role="2EzfPj" node="6IKLrTxohXO" resolve="OrderRow" />
+            <node concept="2EzfPm" id="1MprEyuUqEr" role="2EzfPk">
+              <property role="TrG5h" value="id" />
+              <ref role="2EzfPh" to="58bx:39mK9B0Vi1$" resolve="id" />
+              <node concept="asc1O" id="1MprEyuUqEs" role="2Ezeth">
+                <property role="asc1R" value="x3-scope" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqEv" role="2EzfPk">
+              <property role="TrG5h" value="product" />
+              <ref role="2EzfPh" node="6IKLrTxohY8" resolve="product" />
+              <node concept="2bQEkN" id="1MprEyuUqEw" role="2Ezeth">
+                <ref role="2bQEkM" node="2AkSSRDm$Ed" resolve="kropsla" />
+              </node>
+            </node>
+            <node concept="2EzfPm" id="1MprEyuUqEx" role="2EzfPk">
+              <property role="TrG5h" value="amount" />
+              <ref role="2EzfPh" node="2AkSSRDm$Dv" resolve="amount" />
+              <node concept="2XkdlR" id="1MprEyuUqEy" role="2Ezeth">
+                <property role="2XkdlQ" value="8" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2EzfPm" id="1MprEyuUqEA" role="2EzfPk">
+      <property role="TrG5h" value="total" />
+      <ref role="2EzfPh" node="2AkSSRDm$DR" resolve="total" />
+      <node concept="3uZZn6" id="1MprEyuUqEB" role="WL0qH">
+        <ref role="3zXCHX" node="1MprEyuUqDU" resolve="Test-1-scope" />
+        <ref role="3uZZnp" node="59xQMUDw4Sx" resolve="=.total" />
+      </node>
+      <node concept="otZu$" id="1MprEyuUqEC" role="2Ezeth">
+        <property role="otZu_" value="18.9" />
+      </node>
+    </node>
+  </node>
+  <node concept="2EIHbd" id="5axjqhuz9w9">
+    <property role="TrG5h" value="OrderTotal" />
+    <property role="3GE5qa" value="services" />
+    <ref role="2928mI" node="6IKLrTxohXL" resolve="Order" />
+    <node concept="2HeBU9" id="5axjqhuz9wb" role="2HeBD$">
+      <ref role="2HeBUa" node="2AkSSRDm$Ec" resolve="producs" />
+    </node>
+    <node concept="3tQF1_" id="2ClEY3RPr99" role="3tLugs">
+      <node concept="3tLvEa" id="2ClEY3RPr9b" role="3tLvEb">
+        <ref role="3tLvDH" node="6IKLrTxohYf" resolve="rows" />
+        <node concept="3tQF1_" id="2ClEY3RUu4Q" role="3tLvDF">
+          <node concept="3tLvEa" id="2ClEY3RVtZO" role="3tLvEb">
+            <ref role="3tLvDH" node="6IKLrTxohY8" resolve="product" />
+          </node>
+          <node concept="3tLvEa" id="2ClEY3RVtZE" role="3tLvEb">
+            <ref role="3tLvDH" node="2AkSSRDm$Dv" resolve="amount" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3tQF1_" id="2ClEY3RPr9d" role="3tLvJw">
+      <node concept="3tLvEa" id="2ClEY3RPr9f" role="3tLvEb">
+        <ref role="3tLvDH" node="2AkSSRDm$DR" resolve="total" />
+      </node>
+    </node>
+    <node concept="3bjFja" id="1GTRhbhtqkW" role="3ljKQ0">
+      <ref role="3bjFjK" node="2AkSSRDq$tM" resolve="Test-1" />
+    </node>
+    <node concept="3bjFja" id="1GTRhbhtLBx" role="3ljKQ0">
+      <ref role="3bjFjK" node="1GTRhbhtH_$" resolve="Test-2" />
     </node>
   </node>
 </model>
