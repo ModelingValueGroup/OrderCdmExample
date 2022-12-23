@@ -15,7 +15,7 @@
     <dependency reexport="false">a66e7e37-5540-441f-9d8d-0cf3509cb18d(sales.java)</dependency>
   </dependencies>
   <languageVersions>
-    <language slang="l:2b379ad1-c243-479c-be1a-0c81bd5ce136:cdm.lang" version="7" />
+    <language slang="l:2b379ad1-c243-479c-be1a-0c81bd5ce136:cdm.lang" version="8" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:4caf0310-491e-41f5-8a9b-2006b3a94898:jetbrains.mps.execution.util" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
